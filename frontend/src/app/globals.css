@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 210 25% 97%;
+  --foreground: 222 28% 10%;
+  --card: 0 0% 100%;
+  --card-foreground: 222 28% 10%;
+  --primary: 174 76% 28%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 42 70% 92%;
+  --secondary-foreground: 32 38% 18%;
+  --muted: 214 22% 92%;
+  --muted-foreground: 218 12% 42%;
+  --border: 214 20% 84%;
+  --input: 214 20% 84%;
+  --ring: 174 76% 28%;
+  --destructive: 0 72% 45%;
+  --radius: 0.5rem;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background:
+    linear-gradient(135deg, rgba(15, 118, 110, 0.08), transparent 34%),
+    linear-gradient(315deg, rgba(234, 179, 8, 0.1), transparent 28%),
+    hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+.chart-grid {
+  background-image: linear-gradient(hsl(var(--border)) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--border)) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
